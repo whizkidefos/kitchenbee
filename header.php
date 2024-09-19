@@ -9,21 +9,25 @@
 <body>
 
     <header class="main-header">
-        <div class="uk-container">
-            <div class="nav-wrapper">
-                <div class="logo-wrapper">
-                    <a href="/" class="nav-logo"><img src="<?php echo get_template_directory_uri() . "/images/kitchenbee.png" ?>" alt="kitchenbee logo"></a>
-                </div>
-                
-                <?php
-                    $args = array(
-                        'theme_location' => 'main-menu',
-                        'container'      => 'nav',
-                        'container_class'=> 'main-menu'
-                    );
-                    wp_nav_menu( $args );
-                ?>
-                
-            </div>
+            
+        <div class="logo-wrapper">
+            <a href="/" class="nav-logo"><img src="<?php echo get_template_directory_uri() . "/images/kitchenbee.png" ?>" alt="kitchenbee logo"></a>
         </div>
+        
+        <div class="site-navigation">
+            <?php
+                $args = array(
+                    'theme_location' => 'main-menu',
+                    'container'      => 'nav',
+                    'container_class'=> 'main-menu'
+                );
+                wp_nav_menu( $args );
+            ?>
+        </div>
+
+        <div class="site-cta">
+            <a href="/place-order" class="kitchenbee-btn">Place Order</a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
     </header>

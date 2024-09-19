@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+
 $themeRed: #cd1f1f;
 $themeYellow: #f8c40b;
 $themeWhite: #f8f8f8;
 
 html, body {
-    font-family: "Lora", serif;
+    font-family: "Signika", sans-serif;
     scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Lora", serif;
+    font-family: "Signika", sans-serif;
 }
 
 .kitchenbee-btn {
@@ -28,8 +30,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.site-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+}
 
 @import 'components/header';
 @import 'components/footer';
 @import 'components/homepage-banner';
+@import 'components/food-carousel';
 @import 'components/featured-dishes';
