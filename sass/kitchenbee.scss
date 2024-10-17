@@ -3,6 +3,9 @@
 $themeRed: #cd1f1f;
 $themeYellow: #f8c40b;
 $themeWhite: #f8f8f8;
+$themeGrey: #f1f1f1;
+$boxShadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 
 html, body {
     font-family: "Signika", sans-serif;
@@ -30,6 +33,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.kitchenbee-cta {
+    background-color: $themeRed;
+    color: $themeYellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: darken($themeRed, 10%);
+        color: $themeWhite;
+        text-decoration: none;
+    }
+}
+
 .site-wrapper {
     width: 100%;
     display: flex;
@@ -45,3 +64,5 @@ h1, h2, h3, h4, h5, h6 {
 @import 'components/homepage-banner';
 @import 'components/food-carousel';
 @import 'components/featured-dishes';
+@import 'components/order-cta';
+@import 'components/intro';

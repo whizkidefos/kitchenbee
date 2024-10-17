@@ -1,0 +1,27 @@
+.order-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/african-dishes.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    padding: 3rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-cta-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: $themeWhite;
+
+    max-width: 600px;
+    width: 98%;
+    padding: 20px;
+
+    h4 {
+        color: $themeWhite;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
