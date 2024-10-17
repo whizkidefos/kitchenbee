@@ -1,24 +1,19 @@
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'vertical',
-//     loop: true,
-  
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-  
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-  
-//     // And if we need scrollbar
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-// });
+//Navigation
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.main-menu');
+
+let menuOpen = false;
+burger.addEventListener("click", () => {
+    if (!menuOpen) {
+        burger.classList.add("open");
+        menuOpen = true;
+        menu.classList.add('active');
+    } else {
+        burger.classList.remove("open");
+        menuOpen = false;
+        menu.classList.remove('active');
+    }
+});
 
 const swiper = new Swiper(".bannerSwiper", {
     slidesPerView: "auto",

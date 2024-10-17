@@ -27,7 +27,10 @@
 
         <div class="site-cta">
             <a href="/place-order" class="kitchenbee-btn">Place Order</a>
-            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="burger">
+            <span class="burger-bar"></span>
         </div>
         
     </header>

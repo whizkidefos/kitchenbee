@@ -84,28 +84,41 @@ h1, h2, h3, h4, h5, h6 {
   color: #f8c40b;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
   .site-cta svg {
     display: none;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
   .main-header {
     padding: 0 2rem;
   }
   .main-header nav {
-    background: white;
-    width: 300px;
+    background: rgb(24, 24, 24);
+    width: 320px;
     height: 100vh;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    right: -350px;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+  .main-header nav.active {
+    right: 0;
   }
   .main-header nav ul {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 10rem;
   }
   .main-header nav ul li {
     margin: 0;
@@ -124,6 +137,52 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
   }
 }
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  z-index: 20;
+}
+
+.burger-bar {
+  background-color: #f8c40b;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+}
+.burger-bar::before, .burger-bar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #f8c40b;
+  border-radius: 3px;
+  transition: all 500ms ease-in-out;
+}
+.burger-bar::before {
+  transform: translateY(-10px);
+}
+.burger-bar::after {
+  transform: translateY(10px);
+}
+
+.burger.open .burger-bar {
+  background: transparent;
+}
+
+.burger.open .burger-bar::before {
+  transform: rotate(45deg);
+  background: #f8c40b;
+}
+
+.burger.open .burger-bar::after {
+  transform: rotate(-45deg);
+  background: #f8c40b;
+}
+
 /*================== Footer CSS ===================== */
 footer {
   background-color: #333;
@@ -282,7 +341,7 @@ footer img {
   font-size: x-large;
   font-family: monospace;
   cursor: pointer;
-  z-index: 15;
+  z-index: 5;
 }
 
 #prev {
