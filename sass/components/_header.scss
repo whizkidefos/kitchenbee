@@ -1,6 +1,6 @@
 .main-header {
     background: transparent;
-    padding: 0 7rem;
+    padding: 0 6rem;
 
     display: flex;
     justify-content: space-between;
@@ -59,7 +59,11 @@
     }
 
     .main-header {
-        padding: 0 2rem;
+        padding: 0 1rem;
+
+        img {
+            width: 130px;
+        }
 
         nav {
             background: rgb(24, 24, 24);

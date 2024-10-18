@@ -1,3 +1,30 @@
 .intro {
     padding: 5rem 0;
+
+    .intro-grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        article, figure {
+            width: calc(50% - 1rem);
+
+            @media (max-width: 960px) {
+                width: 100%;
+            }
+        }
+
+        h3, h5 {
+            margin: 0;
+        }
+
+        h5 {
+            color: $themeRed;
+        }
+
+        p {
+            margin: 10px 0 20px;
+        }
+    }
 }

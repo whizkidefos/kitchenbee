@@ -1,7 +1,9 @@
 <section class="intro">
     <div class="uk-container">
         <div class="intro-grid">
-            <figure></figure>
+            <figure>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/chef.jpg" alt="Mrs Beno Durojaiye" />
+            </figure>
             <article>
                 <h5>Mrs Beno Durojaiye</h5>
                 <h3>Award Winning Chef</h3>
