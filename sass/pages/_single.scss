@@ -8,6 +8,11 @@
         position: relative;
         margin-top: -2rem;
         z-index: 1;
+
+        a {
+            color: $themeRed;
+            font-weight: 500;
+        }
     }
 
     &-thumbnail {
@@ -16,6 +21,7 @@
             height: 500px;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
+            border-bottom: 6px solid $themeYellow;
 
             @media (max-width: 960px) {
                 height: 300px;

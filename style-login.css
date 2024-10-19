@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,900&display=swap');
 
 *, *::before, *::after {
-    color: #96040D;
+    color: #cd1f1f;
     font-family: 'Poppins', sans-serif;
 }
 
 a {
-    color: #96040D;
+    color: #cd1f1f;
 }
 
 body.login div#login form#loginform p.forgetmenot {}
@@ -15,21 +15,23 @@ body.login div#login form#loginform p.forgetmenot input#rememberme {}
 
 body.login div#login form#loginform input {
     border-radius: 30px;
-    color: #96040D;
+    color: #cd1f1f;
     font-weight: 500;
     padding: 0 10px;
 }
 
 body.login div#login form#loginform p.submit {
-    background: #96040D;
+    background: #cd1f1f;
     border-radius: 20px;
     color: aliceblue;
+    border: none;
 }
 
 body.login div#login form#loginform p.submit input#wp-submit {
-    background: #96040D;
+    background: #cd1f1f;
     border-radius: 30px;
     color: aliceblue;
+    border: none;
     display: block;
     width: 100%;
     margin-top: 20px;
@@ -38,9 +40,9 @@ body.login div#login form#loginform p.submit input#wp-submit {
 }
 
 .wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
-    background: #96040D;
+    background: #cd1f1f;
     border-radius: 30px;
-    color: aliceblue;
+    color: #fff;
     display: block;
     width: 100%;
     margin-top: 20px;

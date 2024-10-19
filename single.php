@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
-<header class="inner-page-banner">
-    <div class="inner-page-banner-content">
-        <h1><?php the_title(); ?></h1>
-    </div>
-</header>
+<?php get_template_part('/components/inner-page-banner'); ?>
 
 <section class="single">
     <div class="uk-container uk-container-small">

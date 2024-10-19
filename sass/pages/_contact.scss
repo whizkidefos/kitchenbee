@@ -1,0 +1,55 @@
+.contact {
+    padding: 3rem 0;
+
+    .contact-info {
+        width: 100%;
+
+        a {
+            color: $themeRed;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+
+            svg {
+                margin-right: 10px;
+                font-size: 1.2rem;
+                color: $themeRed;
+            }
+        }
+    }
+
+    .social-icons {
+        margin: 15px 0;
+
+        a {
+            padding-right: 10px;
+        }
+    }
+}
+
+form.fluent_form_1 input[type="text"],
+form.fluent_form_3 input[type="text"],
+form.fluent_form_1 input[type="email"],
+form.fluent_form_3 input[type="email"],
+form.fluent_form_1 input[type="number"],
+form.fluent_form_3 input[type="number"],
+form.fluent_form_1 textarea,
+form.fluent_form_3 textarea {
+    font-family: inherit !important;
+}
+
+form.fluent_form_1 .ff-btn-submit:not(.ff_btn_no_style),
+form.fluent_form_3 .ff-btn-submit:not(.ff_btn_no_style) {
+    background-color: $themeRed !important;
+    border-radius: 20px !important;
+    color: $themeYellow !important;
+    font-family: inherit !important;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($themeRed, 10%) !important;
+        color: $themeWhite !important;
+    }
+}

@@ -1,0 +1,38 @@
+.pagination {
+    padding: 2rem 0;
+    text-align: center;
+    ul {
+        display: inline-flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin: 0 5px;
+
+            a, span {
+                padding: 8px 15px;
+                border-radius: 5px;
+                background-color: $themeRed;
+                color: #fff;
+                text-decoration: none;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $themeRed;
+                }
+            }
+
+            &.current span {
+                background-color: $themeRed;
+                cursor: default;
+            }
+
+            &.disabled span {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
