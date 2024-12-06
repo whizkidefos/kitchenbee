@@ -17,15 +17,20 @@ burger.addEventListener("click", () => {
 
 const swiper = new Swiper(".bannerSwiper", {
     slidesPerView: "auto",
-    spaceBetween: 30,
+    effect: "cards",
+    centeredSlides: true,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
     },
-    speed: 7000,
+    speed: 3000,
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 

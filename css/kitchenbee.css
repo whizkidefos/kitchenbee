@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Signika", sans-serif;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .kitchenbee-btn {
   background-color: #cd1f1f;
   color: #f8c40b;
@@ -206,49 +212,34 @@ footer img {
 }
 
 .homepage-banner {
-  padding: 50px 0;
-}
-
-.swiper {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0.4) 100%);
   width: 100%;
-  height: 700px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  height: 850px;
+  padding-top: 80px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.homepage-banner .container {
+  overflow: hidden;
 }
-
-.swiper-slide {
-  width: 80%;
+.homepage-banner .item {
+  position: absolute;
+  width: 175px;
+  height: 200px;
+  background-color: #000;
 }
-
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 40%;
-}
-
-.swiper-wrapper .swiper-pagination .swiper-pagination-bullet {
-  background-color: #f8c40b !important;
-  width: 20px !important;
-  height: 20px !important;
-}
-.swiper-wrapper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #cd1f1f !important;
+.homepage-banner .loader {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 :root {
@@ -478,6 +469,7 @@ footer img {
   }
 }
 .intro .intro-grid img {
+  border: 10px solid #f8c40b;
   border-radius: 10px;
 }
 .intro .intro-grid h3, .intro .intro-grid h5 {
