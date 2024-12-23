@@ -482,6 +482,16 @@ footer img {
   margin: 10px 0 20px;
 }
 
+.intro-image-container {
+  width: 100%;
+  height: 400px;
+}
+.intro-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .single {
   background: #f1f1f1;
   padding-bottom: 3rem;

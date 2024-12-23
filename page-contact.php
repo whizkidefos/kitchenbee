@@ -13,20 +13,42 @@
                         <div class="contact-item">
                         <p>
                             <i class="fas fa-map"></i>
-                            Belle Vue, Manchester, M12 4TH, United Kingdom.
+                            <?php if ( $address = get_field( 'address' ) ) : ?>
+                                <?php echo esc_html( $address ); ?>
+                            <?php endif; ?>
                         </p>
                         <p>
                             <i class="fas fa-phone"></i>
-                            0161 123 4567
+                            <?php if ( $mobile = get_field( 'mobile' ) ) : ?>
+                                <?php echo esc_html( $mobile ); ?>
+                            <?php endif; ?>
                         </p>
                         <p>
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:hello@kitchenbee.com">hello@kitchenbee.com</a>
+                            <?php if ( $email = get_field( 'email' ) ) : ?>
+                                <?php echo esc_html( $email ); ?>
+                            <?php endif; ?>
                         </p>
                     </div>
-                        <p><i class="fas fa-clock"></i>Mon - Fri: 9:00am - 5:00pm</p>
-                        <p><i class="fas fa-clock"></i>Sat - Sun: 10:00am - 4:00pm</p>
-                        <p><i class="fas fa-clock"></i>Bank Holidays: Closed</p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            <?php if ( $weekdays_opening_hours = get_field( 'weekdays_opening_hours' ) ) : ?>
+                                <?php echo esc_html( $weekdays_opening_hours ); ?>
+                            <?php endif; ?>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            <?php if ( $weekend_opening_hours = get_field( 'weekend_opening_hours' ) ) : ?>
+                                <?php echo esc_html( $weekend_opening_hours ); ?>
+                            <?php endif; ?>
+                        </p>
+                        <p>
+                            <i class="fas fa-clock"></i>
+                            Bank Holidays:
+                            <?php if ( $bank_holidays = get_field( 'bank_holidays' ) ) : ?>
+                                <?php echo esc_html( $bank_holidays ); ?>
+                            <?php endif; ?>
+                        </p>
                         <div class="social-icons">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>

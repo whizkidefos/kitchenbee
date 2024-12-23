@@ -15,7 +15,7 @@
             // Custom query to show 8 posts per page
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
-                'posts_per_page' => 8,
+                'posts_per_page' => 6,
                 'paged' => $paged
             );
             $custom_query = new WP_Query($args);

@@ -1,13 +1,21 @@
 <section class="intro">
     <div class="uk-container">
         <div class="intro-grid">
-            <figure>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/chef.jpg" alt="Mrs Beno Durojaiye" />
+            <figure class="intro-image-container">
+                <?php
+                $intro_image = get_field( 'intro_image', 'options' );
+                if ( $intro_image ) : ?>
+                    <img src="<?php echo esc_url( $intro_image['url'] ); ?>" alt="<?php echo esc_attr( $intro_image['alt'] ); ?>" />
+                <?php else : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/chef.jpg" alt="Mrs Beno Durojaiye" />
+                <?php endif; ?>
             </figure>
             <article>
                 <h5>Mrs Beno Durojaiye</h5>
                 <h3>Award Winning Chef</h3>
-                <p>Our chef has been in the industry for over 20 years. She has won numerous awards and has been featured in several magazines and TV shows. She is passionate about cooking and is always looking for new ways to improve her skills.</p>
+                <?php if ( $intro_text = get_field( 'intro_text', 'options' ) ) : ?>
+                    <?php echo $intro_text; ?>
+                <?php endif; ?>
                 <a href="/about" class="kitchenbee-btn">Learn More</a>
             </article>
         </div>
